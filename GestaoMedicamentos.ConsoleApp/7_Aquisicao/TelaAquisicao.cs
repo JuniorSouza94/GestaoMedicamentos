@@ -47,7 +47,7 @@ namespace GestaoMedicamentos.ConsoleApp._7_Aquisicao
                 return;
             }
             novaAquisicao.QuantidadeMedicamento = quantidade;
-            medicamento.QuantidadeDisponivel = novaAquisicao.QuantidadeMedicamento;
+            medicamento.QuantidadeDisponivel += novaAquisicao.QuantidadeMedicamento;
 
             _repositorioAquisicao.Adicionar(novaAquisicao);
 
